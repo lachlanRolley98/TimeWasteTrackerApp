@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bWork"
+        android:layout_width="115dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#07F411"
+        android:text="WORK"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bPause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bTotalSaved" />
+
+    <Button
+        android:id="@+id/bPause"
+        android:layout_width="115dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginBottom="29dp"
+        android:text="II"
+        android:textColor="#F6DD03"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bPlay"
+        app:layout_constraintStart_toEndOf="@+id/bWork"
+        app:layout_constraintTop_toBottomOf="@+id/bTotalSaved" />
+
+    <Button
+        android:id="@+id/bPlay"
+        android:layout_width="115dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#F40909"
+        android:text="PLAY"
+        android:textColor="#050505"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bPause"
+        app:layout_constraintTop_toBottomOf="@+id/bTotalSaved" />
+
+    <TextView
+        android:id="@+id/bTotalSaved"
+        android:layout_width="342dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="235dp"
+        android:gravity="center"
+        android:text="Get To Work"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
