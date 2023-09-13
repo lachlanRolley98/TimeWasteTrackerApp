@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
             //if counting play
             } else if (curr == 3) {
-                String retrievedTime = sharedPreferences.getString("workStart","None");
+                String retrievedTime = sharedPreferences.getString("playStart","None");
                 if(retrievedTime != "None"){
                     int[] startTime = TimeConverter.stringToArray(retrievedTime,"yyyy-MM-dd HH:mm:ss");
                     int elapsedTime = TimeConverter.calculateTimeDifference(startTime, endTime );
@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 }else{totalSaved.setText("No work time saved");}
 
             } else {
-                totalSaved.setText("Something wrong g");
+                totalSaved.setText("Not Counting Stuff");
             }
 
 
